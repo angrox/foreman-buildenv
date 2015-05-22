@@ -16,7 +16,7 @@ EOF
 
 # Add non priviledged user for rpmbuilding
 adduser rpmbuild
-mkdir -P /home/rpmbuild/rpm/tmp
+mkdir -p /home/rpmbuild/rpm/tmp
 cat << EOF >> /home/rpmbuild/.rpmmacros
 %_topdir               /home/rpmbuild/rpm
 %_tmppath              /home/rpmbuild/rpm/tmp
