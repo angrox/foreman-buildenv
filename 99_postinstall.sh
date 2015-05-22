@@ -24,3 +24,7 @@ cat << EOF >> /home/rpmbuild/.rpmmacros
 %scl                   ruby193
 EOF
 chown -R rpmbuild:rpmbuild /home/rpmbuild
+
+
+# Copy mock config
+cp mock/* /etc/mock
